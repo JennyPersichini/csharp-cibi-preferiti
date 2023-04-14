@@ -22,7 +22,12 @@ Console.WriteLine("Lunghezza: " + favoriteFoods.Length);
 
 //stampo l'intera classifica
 
+Console.WriteLine("La classifica ufficiale: ");
 
+for (int i = 0; i < favoriteFoods.Length; i++)
+{
+    Console.WriteLine($"{i + 1} - {favoriteFoods[i]}");
+}
 
 //stampo il cibo top
 
