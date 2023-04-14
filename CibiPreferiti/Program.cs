@@ -36,3 +36,29 @@ Console.WriteLine($"Il cibo top del top: {favoriteFoods[0]}");
 //stampo il cibo preferito ma non troppo
 
 Console.WriteLine("Il cibo che mi piace ma non mi fa fare wow: " + favoriteFoods[favoriteFoods.Length - 1]);
+
+
+
+
+Console.Write("Quanti cibi preferiti hai? ");
+uint numeroCibi = uint.Parse(Console.ReadLine());
+
+string[] arrayCibi = new string[numeroCibi];
+
+for (int i = 0; i < numeroCibi; i++)
+{
+    Console.Write("Inserisci il cibo: ");
+    string food = Console.ReadLine();
+}
+
+//Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari.
+//In questo caso vanno stampati i 2 elementi in centro alla vostra classifica. 
+
+if (arrayCibi.Length % 2 == 0)
+{
+    Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length - 1) / 2] + ", " + arrayCibi[(arrayCibi.Length) / 2]);
+}
+else
+{
+    Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length) / 2]);
+}

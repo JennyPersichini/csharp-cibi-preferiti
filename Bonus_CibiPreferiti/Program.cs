@@ -21,6 +21,7 @@ for (int i = 0; i < numeroCibi; i++)
 //Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari.
 //In questo caso vanno stampati i 2 elementi in centro alla vostra classifica. 
 
+/*
 if (arrayCibi.Length % 2 == 0)
 {
     Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length - 1) / 2] + ", " + arrayCibi[(arrayCibi.Length) / 2]);
@@ -28,4 +29,10 @@ if (arrayCibi.Length % 2 == 0)
 else
 {
     Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length) / 2]);
+}
+*/
+
+int indiciMedianaArray(int arrayCibi.Length)
+{
+
 }
