@@ -14,7 +14,7 @@
 
 //inizializzo l'array
 
-string[] favoriteFoods = { "pizza", "frozen yogurt", "piadina", "bomba alla crema", "timballo", "broccoli", "polenta" };
+string[] favoriteFoods = { "pizza", "frozen yogurt", "piadina", "bomba alla crema", "timballo", "kafferep", "broccoli", "polenta" };
 
 //stampo a video la lunghezza della classifica
 
@@ -31,6 +31,8 @@ for (int i = 0; i < favoriteFoods.Length; i++)
 
 //stampo il cibo top
 
-
+Console.WriteLine($"Il cibo top del top: {favoriteFoods[0]}");
 
 //stampo il cibo preferito ma non troppo
+
+Console.WriteLine("Il cibo che mi piace ma non mi fa fare wow: " + favoriteFoods[favoriteFoods.Length - 1]);
