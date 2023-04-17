@@ -7,6 +7,8 @@
  * Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana.
  */
 
+using System;
+
 Console.Write("Quanti cibi preferiti hai? ");
 uint numeroCibi = uint.Parse(Console.ReadLine());
 
@@ -21,18 +23,18 @@ for (int i = 0; i < numeroCibi; i++)
 //Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari.
 //In questo caso vanno stampati i 2 elementi in centro alla vostra classifica. 
 
-/*
-if (arrayCibi.Length % 2 == 0)
-{
-    Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length - 1) / 2] + ", " + arrayCibi[(arrayCibi.Length) / 2]);
-}
-else
-{
-    Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length) / 2]);
-}
-*/
 
-int indiciMedianaArray(int arrayCibi.Length)
+
+
+void indiciMedianaArray(string[] arrayCibi)
 {
+    if (arrayCibi.Length % 2 == 0)
+    {
+        Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length - 1) / 2] + ", " + arrayCibi[(arrayCibi.Length) / 2]);
+    }
+    else
+    {
+        Console.WriteLine("In mezzo troveremo: " + arrayCibi[(arrayCibi.Length) / 2]);
+    }
 
 }
